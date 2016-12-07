@@ -1,0 +1,59 @@
+@import url('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css');
+@font-face {
+    font-family: 'Montserrat-Bold';
+    src: url('assets/fonts/Montserrat-Bold.otf')
+}
+
+html, body {
+    height: 100%;
+}
+
+// body {
+//     transition: all .2s linear;
+//     -o-transition: all .2s linear;
+//     -moz-transition: all .2s linear;
+//     -webkit-transition: all .2s linear;
+// }
+
+@import "scss/navbar";
+@import "scss/home";
+@import "scss/about";
+@import "scss/team";
+@import "scss/event";
+@import "scss/photos";
+@import "scss/donate";
+@import "scss/footer";
+@import "scss/register";
+@import "scss/aboutus";
+
+
+a:hover,
+a:focus,
+a:active,
+a:visited {
+    text-decoration: none !important;
+    color: #FFF;
+}
+
+// fadeIn animation for scrolling on landing page
+.fadeIn {
+    opacity: 0;
+}
+
+.fade-slide {
+    animation-name: faderSlide;
+    -webkit-animation-name: faderSlide;
+    animation-duration: 1s;
+    -webkit-animation-duration: 3s;
+    animation-timing-function: ease;
+    -webkit-animation-timing-function: ease;
+    @keyframes faderSlide {
+        0% {
+            transform: translateY(10%);
+        }
+        25% {
+            transform: translateY(0%);
+        }
+    }
+}

@@ -1,0 +1,161 @@
+.b-t-3 {
+    height: 400px;
+}
+
+.footer-image {
+    width: 100%;
+}
+
+.join-us {
+    margin-bottom: 10px;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Helvetica Neue';
+    font-size: 14px;
+}
+
+.h5 {
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Helvetica Neue';
+    -webkit-font-smoothing: antialiased;
+}
+
+.footer-list {
+    font-family: 'Helvetica Neue';
+    font-size: 14px;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+}
+
+.container-brand-dark {
+    padding: 96px 0px 0px;
+    background-color: #2b2d2e;
+    color: #fff;
+}
+
+.footer-list,
+.footer-icon-list,
+.footer-icon-list-sm {
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+.link {
+    color: #FFF;
+}
+
+.footer-icon-list {
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+.footer-icon-list li {
+    display: inline;
+    padding-right: 10px;
+}
+
+.footer-icon-list ul {
+    padding-left: 0px;
+    float: left;
+}
+
+.fa-angle-up {
+    font-weight: 600;
+    padding-left: 5px;
+    font-size: 20px !important;
+}
+
+.footer-icon-list > ul > li > a > i {
+    font-size: 2em !important;
+}
+
+.hide-sm {
+    display: none;
+}
+
+.footer-icon-list-sm > ul > li {
+    display: inline;
+    padding-right: 10px;
+}
+
+.footer-icon-list-sm > ul > li > a {
+    -webkit-font-smoothing: antialiased;
+    font-size: 16px;
+    font-family: 'Helvetica Neue';
+}
+
+.footer-icon-list-sm > ul {
+    text-align: center;
+    padding: 0px;
+}
+
+// MEDIA-QUERIES
+@media (min-width: 768px) {
+    .hide-sm {
+        display: inline;
+    }
+    .f-info,
+    .f-desc,
+    .join-us {
+        display: none;
+    }
+    .f-header {
+        text-align: center;
+    }
+    .footer-icon-list ul {
+        float: none;
+        padding: 0px;
+    }
+    .footer-icon-list-sm {
+        text-align: center;
+    }
+    .b-t-3{
+      background-size:cover;
+    }
+}
+
+@media (max-width:768px) {
+    .hide-sm {
+        display: inline;
+    }
+    .f-info,
+    .f-desc,
+    .join-us {
+        display: none;
+    }
+    .f-header {
+        text-align: center;
+    }
+    .footer-icon-list ul {
+        float: none;
+        padding: 0px;
+    }
+    .footer-icon-list-sm {
+        text-align: center;
+    }
+    .b-t-3{
+      // background-size:cover;
+    }
+
+}
+
+@media (min-width: 992px) {
+    .f-info {
+        display: initial;
+    }
+    .f-desc,
+    .join-us {
+        display: block;
+    }
+    .f-header {
+        text-align: initial;
+    }
+    .footer-icon-list-sm {
+        display: none;
+    }
+    .b-t-3{
+      // background-size:cover;
+    }
+}

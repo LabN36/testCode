@@ -1,0 +1,251 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('assets/fonts/icomoon.eot?2wody5');
+  src:  url('assets/fonts/icomoon.eot?2wody5#iefix') format('embedded-opentype'),
+    url('assets/fonts/icomoon.ttf?2wody5') format('truetype'),
+    url('assets/fonts/icomoon.woff?2wody5') format('woff'),
+    url('assets/fonts/icomoon.svg?2wody5#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-pencil:before {
+  content: "\e905";
+}
+.icon-phone:before {
+  content: "\e942";
+}
+.icon-location:before {
+  content: "\e947";
+}
+.icon-clock:before {
+  content: "\e94e";
+}
+
+
+@import url("https://fonts.googleapis.com/css?family=Lobster");
+
+.container {
+    margin-right: 0 !important;
+}
+header.AboutHeader{
+    height: 6em;
+    width: 100%;
+    position: absolute;;
+    z-index: 9999;
+    background-color: black;
+    figure {
+        margin: 0 auto;
+        border-radius: 50%;
+        height: 5em;
+        text-align: center;
+        margin-bottom: .5em;
+        img {
+            display: block;
+            margin: 0 auto;
+            width: 80%;
+            height: 27em;
+            border-radius: 39%;
+
+        }
+    }
+}
+
+.banner {
+    min-height: 56em;
+    width: 100%;
+    img {
+        width: 100%;
+        height: 56em;
+        filter: blur(1px);
+    }
+    .buildDreams {
+        width: 50em;
+        text-align: center;
+        background-color: rgba(0,0,0,0.3);
+        border: 10px solid white;
+        position: absolute;
+        z-index: 1000;
+        top: 40em;
+        right: 25em;
+    }
+    label {
+        padding: 5px;
+        font-size: 4em;
+        color: white;
+        font-family: 'Montserrat-Bold';
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.history {
+    min-height: 30em;
+    background-color: white;
+    text-align: center;
+    font-size: 1.7em;
+    border-bottom: 4px solid #D45B68;
+    .foundersInfo {
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+    }
+    img {
+        width: 54%;
+        margin: 8px;
+        padding-right: 10px;
+        border-right: 1px solid #C0C0C0;
+    }
+    h2 {
+        font-size: 3em;
+        font-family: 'Montserrat-Bold';
+        display: block;
+        padding: 5px;
+        border-bottom: 4px solid black;
+    }
+    .foundersHistory {
+        text-align: justify;
+        margin: 12px;
+        font-size: 20px;
+        font-family: 'Montserrat-Bold';
+    }
+}
+
+.motivation-container {
+    min-height: 20em;
+    .motivation {
+        width: 100%;
+        border-bottom: 4px solid white;
+        text-align: center;
+        font-family: 'Montserrat-Bold';
+        h2 {
+            font-size: 4em;
+            display: inline-block;
+            padding: 5px;
+        }
+    }
+    p {
+        text-align: justify;
+        margin: 12px;
+        font-size: 20px;
+    }
+}
+
+.cases {
+    display: flex;
+    flex-direction: row wrap;
+    justify-content: center;
+    width: 95%;
+    margin: 0 auto;
+
+    .case {
+        margin: 0 2em;
+        h3 {
+            text-align: center;
+            display: block;
+        }
+    }
+}
+
+.contact {
+    width: 100%;
+    min-height: 10em;
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+    .data {
+        padding-top: 20px;
+        width: 30%;
+        label, span, p {
+            display: inline-block;
+        }
+        p {
+            padding: 5px;
+        }
+        label {
+            font-size: 2em;
+            padding: 0 10px;
+            color: black;
+        }
+        span {
+            color: rgb(99, 97, 92);
+            vertical-align: middle;
+        }
+    }
+    .form {
+        width: 30%;
+        color: black;
+        input {
+            display: block;
+            height: 3.5em;
+            width: 25em;
+            margin-bottom: 5px;
+            border-radius: 5px;
+            box-shadow: 1px solid gray;
+        }
+        .sendButton {
+            height: 3em;
+            background-color: white;
+            border: 2px solid #D45B68;
+            margin-left: 7em;
+            width: 10em;
+            color: red;
+        }
+        .sendButton:hover {
+            background-color: #D45B68;
+            border: 2px solid red;
+            color: white;
+        }
+        textarea {
+            border: 1px solid black;
+        }
+    }
+}
+
+.imagesContainer {
+    margin: 0;
+    width: 100%;
+    height: auto;
+    background-color: #D45B68;
+    color: white;
+    text-align: center;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    .images {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 10px 10px 10px 10px;
+        .image {
+            margin: 0;
+            padding: 0;
+            width: 30em;
+            height: 25em;
+            img {
+                width: 100%;
+                height: 100%;
+                cursor: pointer;
+            }
+        }
+    }
+    h2 {
+        font-size: 4em;
+        text-align: center;
+        display: block;
+        text-transform: capitalize;
+    }
+}

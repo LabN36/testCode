@@ -1,0 +1,93 @@
+.events {
+    position: relative;
+    background-color: rgba(204, 204, 204, 0.27);
+    .b-t-2 {
+        height: 50px;
+    }
+    .events-container {
+        padding-top: 40px;
+        padding-bottom: 60px;
+    }
+    .text-center {
+        font-family: 'Helvetica Neue';
+        .events-header {
+            color: #D45B68;
+            font-weight: 400;
+        }
+        p {
+            font-weight: 300;
+            font-size: 1.2em;
+            -webkit-font-smoothing: antialiased;
+            .volunteer-link {
+                color: #D45B68;
+            }
+        }
+    }
+    .row {
+        .card {
+            text-align: center;
+            margin-bottom: 30px;
+            transition: all 0.5s ease;
+            .sw-event {}
+            .event-image {
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
+                height: 100%;
+                overflow: hidden;
+                img {
+                    max-width: 100%;
+                }
+            }
+            .event-description {
+                background-color: #FFF;
+                padding: 10px;
+                div {
+                    .event-title {
+                        font-size: 24px;
+                        font-weight: 300;
+                        color: #DB5D6D;
+                    }
+                    .event-date {
+                        color: #777;
+                        -webkit-font-smoothing: antialiased;
+                        font-size: 14px;
+                    }
+                }
+                .event-text {
+                    float: left;
+                    text-align: left;
+                    color: #444;
+                    margin-top: 4px;
+                }
+                .btn-clear {
+                    display: inline-block;
+                    text-align: center;
+                    margin-top: 20px;
+                    font-size: 15px;
+                    border-radius: 3px;
+                    padding: 10px 14px;
+                    color: rgba(255, 255, 255, .9);
+                    background-color: transparent;
+                    border-color: rgba(255, 255, 255, .68);
+                    border: none;
+                    -webkit-transition: all .1s ease-in;
+                    transition: all .1s ease-in;
+                }
+                .btn-register {
+                    background: #D45B68;
+                    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .4), inset 0 -3px 0 #a3454f;
+                    -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .4), inset 0 -3px 0 #a3454f;
+                }
+                .btn-volunteer {
+                    background: #36DD51;
+                    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .4), inset 0 -3px 0 #2AAF40;
+                    -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .4), inset 0 -3px 0 #2AAF40;
+                }
+            }
+        }
+    }
+}
+
+.card:hover {
+    transform: translateY(-15px);
+}

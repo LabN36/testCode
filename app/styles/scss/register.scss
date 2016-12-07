@@ -1,0 +1,97 @@
+.text-center {
+  text-align: center
+}
+.signup, .signin {
+  height: 100vh;
+  position: relative;
+  background-size: cover;
+  overflow-y: auto;
+}
+
+.signup {
+  background-image: url('assets/img/justin.jpg');
+}
+
+.signin {
+  background-image: url('assets/img/essence.jpg');
+}
+
+.signup .icon-wrap,
+.signin .icon-wrap, {
+  margin: 30px auto;
+  margin-bottom: 0px;
+}
+
+.signup .icon-wrap img,
+.signin .icon-wrap img {
+  height: 75px;
+}
+
+.signup-content, .signin-content {
+  width: 500px;
+  margin: 20px auto;
+  background-color: #FFF;
+  padding: 15px;
+  padding-bottom: 30px;
+  border-radius: 5px;
+}
+
+.signin-content{
+  padding-bottom: 40px;
+}
+.signin-form {
+  margin: 0 auto;
+  text-align: center;
+  width: 70%;
+}
+
+
+.signin-form form input[type='email'],
+.signin-form form input[type='password'],
+.signin-form form input[type='text'] {
+  width: 100%;
+  height: 45px;
+  background: #FFF;
+  border: 2px solid #e7e7e7;
+  border-radius: 3px;
+  margin: 20px auto;
+  padding: 10px 16px;
+  display: block;
+  font-size: 18px;
+  transition: opacity 0.4s;
+  text-align: left;
+  line-height: 1.33;
+  -webkit-appearance: none;
+  -webkit-font-smoothing: antialiased;
+}
+
+.signup-input form input {
+  outline-color: #ff9999;
+}
+
+.signin-input form input {
+  outline-color: #f08334;
+}
+
+.signin-form form .alert-warning {
+  margin: 0 auto;
+  padding: 5px;
+}
+
+.btn-success {
+  width: 100%;
+  font-size: 1.5em;
+  font-family: 'Raleway';
+  letter-spacing: 0.04em;
+  -webkit-font-smoothing: antialiased;
+}
+
+.signin-footer {
+  color: #FFF;
+  font-weight: 500;
+  -webkit-font-smoothing: antialiased;
+  font-size: 1.2em;
+}
+.signin-link {
+  text-decoration: underline;
+}

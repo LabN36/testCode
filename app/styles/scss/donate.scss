@@ -1,0 +1,154 @@
+    #donate {
+        background-image: url(../assets/img/donate-bg.jpg);
+        background-size: cover;
+        padding-bottom: 30px;
+        .container {
+            .row {
+                padding: 50px;
+                .donate-left {
+                    background-color: #FFF;
+                    height: 300px;
+                    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+                    .donate-content {
+                        font-family: 'Raleway';
+                        letter-spacing: 1px;
+                        color: #3E3F46;
+                        padding: 20px;
+                        font-weight: 300;
+                        line-height: 20px;
+                        .btn-donate {
+                            width: 100%;
+                            background: #ff5a60;
+                        }
+                        .btn-donate:hover {
+                            background: #f87277;
+                        }
+                    }
+                }
+                .donate-right {
+                    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+                    height: 300px;
+                    padding-left: 0px;
+                    padding-right: 0px;
+                }
+                .donate-slider {
+                    list-style-type: none;
+                    margin: 0;
+                    padding: 0;
+                    position: relative;
+                    width: 100%;
+                    height: 100%;
+                    li {
+                        position: absolute;
+                        top: 0;
+                        background: url(../assets/img/banner1.jpg)center;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        animation: fade-out 9s infinite both;
+                    }
+                    li:nth-child(2) {
+                        background-image: url(../assets/img/banner3.jpg);
+                        animation-delay: 3s;
+                    }
+                    li:nth-child(3) {
+                        background-image: url(../assets/img/banner2.jpg);
+                        animation-delay: 6s;
+                    }
+                    @keyframes fade-out {
+                        0% {
+                            opacity: 1;
+                        }
+                        22% {
+                            opacity: 1;
+                        }
+                        33% {
+                            opacity: 0;
+                        }
+                        88% {
+                            opacity: 0;
+                        }
+                        100% {
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    .donate-header {
+        font-family: 'Raleway';
+        margin: 20px 0px;
+        color: #FFF !important;
+        font-weight: 100;
+        letter-spacing: -2px;
+        font-size: 3.5em;
+        -webkit-font-smoothing: antialiased;
+    }
+    
+    // MEDIA-QUERIES
+    @media (min-width: 992px) {
+        #donate .container .row {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        .donate-content {
+            padding: 10px !important;
+        }
+    }
+    
+    @media (max-width: 1200px) {
+        #donate .container {
+            width: 100%;
+            margin-left: 0px;
+            margin-right: 0px;
+        }
+    }
+    
+    @media (max-width: 992px) {
+        #donate .container .row {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        .donate-content {
+            padding: 10px !important;
+            text-align: center;
+        }
+        .btn-donate {
+            width: initial !important;
+        }
+    }
+    
+    @media (min-width: 0px) {
+        .donate-left {
+            height: 100px;
+        }
+        #donate .container .row{
+          margin: 0px;
+        }
+    }
+    
+    @media (max-width: 768px) {
+        #donate .container {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+        }
+        .donate-content {
+            text-align: center;
+        }
+    }
+    
+    @media (max-width: 630px) {
+        .donate-slider {
+            li {
+                background: url(../assets/img/b1-mobile.jpg)center;
+            }
+            li:nth-child(2) {
+                background-image: url(../assets/img/b3-mobile.jpg) !important;
+            }
+            li:nth-child(3) {
+                background-image: url(../assets/img/b2-mobile.jpg) !important;
+            }
+        }
+    }
