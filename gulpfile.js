@@ -37,7 +37,7 @@ gulp.task('build:cpServer', function () {
              .pipe(gulp.dest('./dist/server-build'))
 })
 gulp.task('build:revServer', ['build:cpServer'], function () {
-  // var manifest = gulp.src('./dist/rev-manifest.json')
+  var manifest = gulp.src('./dist/rev-manifest.json')
   return gulp.src('./dist/server-build/{components,containers}/**/*')
              .pipe($.revReplace({ manifest: manifest }))
              .pipe(gulp.dest('./dist/server-build'))
