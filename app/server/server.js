@@ -15,9 +15,9 @@ let server = new Express()
 let port = process.env.PORT || 3000
 let scriptSrcs
 process.env.ON_SERVER = true
-process.env.NODE_ENV = 'production';
 let styleSrc
 if (process.env.NODE_ENV === 'production') {
+  console.log("production is set------------->")
   let refManifest = require('../../rev-manifest.json')
   scriptSrcs = [
     `/${refManifest['vendor.js']}`,
